@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# Urban Routes for Inline Skating
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Note: This project is currently under development.**
 
-## Available Scripts
+The app allows users to track and rate routes for inline skating in urban areas.
 
-In the project directory, you can run:
+## Getting Started
 
-### `npm start`
+To run this project locally and access the Google Maps functionality, you'll need to set up a Google Maps API key. Follow the steps below to configure the API key.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Setting up Google Maps API Key
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Go to the [Google Cloud Console](https://console.cloud.google.com/).
 
-### `npm test`
+2. Create a new project or select an existing project.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Enable the "Maps JavaScript API" for your project.
 
-### `npm run build`
+4. Go to the "Credentials" section in the left sidebar.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+5. Create a new API key or use an existing one.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+6. Restrict the API key by clicking the "Restrict key" button and set any necessary restrictions (e.g., HTTP referrers, API restrictions).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+7. Copy the generated API key.
 
-### `npm run eject`
+8. In the root directory of this project, create a `.env` file.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+9. Open the `.env` file and add the following line:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```plaintext
+   REACT_APP_GOOGLE_MAPS_API_KEY=YOUR_API_KEY
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   Replace `YOUR_API_KEY` with the API key you copied earlier.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+10. Save the `.env` file.
 
-## Learn More
+## Running the Project
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Install the project dependencies by running the following command:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```plaintext
+   npm install
+   ```
 
-### Code Splitting
+2. Start the development server with the following command:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   ```plaintext
+   npm start
+   ```
 
-### Analyzing the Bundle Size
+   By default the app will be running at http://localhost:3000.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Features
 
-### Making a Progressive Web App
+- Track and save inline skating routes.
+- Rate and review routes.
+- Explore routes shared by other users.
+- Search and filter routes based on location and difficulty level.
+- View route details, including distance, duration, and user reviews.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Contributing
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contributions are welcome! If you find any issues or have ideas for improvements, please submit a pull request or open an issue.

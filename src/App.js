@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import { Wrapper } from '@googlemaps/react-wrapper'
+import Map from './components/Map'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Wrapper apiKey={process.env.REACT_APP_GOOGLE_MAPS_API_KEY}>
+        <header className="App-header">
+          <h1>Ladeiras CWB</h1>
+          <Map />
+        </header>
+      </Wrapper>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
