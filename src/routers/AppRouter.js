@@ -1,4 +1,4 @@
-import Landing from '../pages/Landing/Landing'
+import Trajeto from '../pages/Trajeto/Trajeto'
 import List from '../pages/List/List'
 import ErrorPage from '../error-page'
 
@@ -11,11 +11,11 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />
   },
   {
-    path: '/landing',
-    element: <Landing />
+    path: '/trajeto/:id',
+    element: <Trajeto />
   },
   {
-    path: '/list',
+    path: '/trajetos',
     element: <List />
   }
 ])

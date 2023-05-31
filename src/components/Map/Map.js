@@ -45,10 +45,8 @@ function Map() {
 
   return (
     <div>
-      <h2>Fredolin</h2>
       <div ref={ref} style={{ height: '400px', width: '600px' }}></div>
       {distance && <p>Distância: {distance}</p>}
-      <p>Nível: Avançado</p>
     </div>
   )
 }

@@ -22,8 +22,7 @@ const Navbar = () => {
           </button>
           <div className="navbar__dropdown-menu">
             <a href="/">Home</a>
-            <a href="/landing">Fredoca</a>
-            <a href="/list">Lista</a>
+            <a href="/trajetos">Trajetos</a>
           </div>
         </div>
       </div>
@@ -32,7 +31,7 @@ const Navbar = () => {
       </div>
       <div className="navbar__right">
         {/* <img src="/path/to/logo.png" alt="Logo" className="navbar__logo" /> */}
-        <button>Logout</button>
+        {/* <button>Logout</button> */}
       </div>
     </nav>
   )

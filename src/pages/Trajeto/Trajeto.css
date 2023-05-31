@@ -1,19 +1,19 @@
-.Landing {
+.Trajeto {
   text-align: center;
 }
 
-.Landing-logo {
+.Trajeto-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .Landing-logo {
+  .Trajeto-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
-.Landing-header {
+.Trajeto-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -23,11 +23,11 @@
   color: white;
 }
 
-.Landing-link {
+.Trajeto-link {
   color: #61dafb;
 }
 
-@keyframes Landing-logo-spin {
+@keyframes Trajeto-logo-spin {
   from {
     transform: rotate(0deg);
   }
