@@ -1,16 +1,11 @@
+import React from 'react'
+import Navbar from './components/Navbar/Navbar'
 import './App.css'
-import { Wrapper } from '@googlemaps/react-wrapper'
-import Map from './components/Map'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <Wrapper apiKey={process.env.REACT_APP_GOOGLE_MAPS_API_KEY}>
-        <header className="App-header">
-          <h1>Ladeiras CWB</h1>
-          <Map />
-        </header>
-      </Wrapper>
+    <div className="app-div">
+      <Navbar />
     </div>
   )
 }
