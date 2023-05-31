@@ -16,7 +16,7 @@ function List() {
         <tr>
           <th>Nome/Apelido</th>
           <th>Level</th>
-          <th>Rate</th>
+          <th>Pontuação</th>
           <th>Opções</th>
         </tr>
       </thead>

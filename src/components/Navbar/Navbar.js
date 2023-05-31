@@ -21,7 +21,7 @@ const Navbar = () => {
             Menu
           </button>
           <div className="navbar__dropdown-menu">
-            <a href="/">Home</a>
+            <a href="/">Início</a>
             <a href="/trajetos">Trajetos</a>
           </div>
         </div>
