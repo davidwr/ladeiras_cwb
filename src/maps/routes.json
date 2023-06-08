@@ -1,13 +1,27 @@
 {
   "c591949d58a84729b742cde98281fd00": {
     "title": "Fredolin",
+    "category": "ladeira",
     "level": "ADVANCED",
-    "rate": "3",
+    "rate": "4",
     "map_data": {
       "zoom": 8,
       "center": { "lat": -25.385209745136674, "lng": -49.30849165007152 },
       "start": { "lat": -25.38261005932558, "lng": -49.31180395890537 },
       "end": { "lat": -25.387303056261842, "lng": -49.30446489412115 },
+      "stops": []
+    }
+  },
+  "9621e9733e034dad8e1d49edfdf83974": {
+    "title": "São Lourenço",
+    "category": "trajeto",
+    "level": "BEGINNER",
+    "rate": "3",
+    "map_data": {
+      "zoom": 7,
+      "center": { "lat": -25.4014227, "lng": -49.2683524 },
+      "start": { "lat": -25.420396628595295, "lng": -49.26938864364808 },
+      "end": { "lat": -25.388038905461787, "lng": -49.26678695756765 },
       "stops": []
     }
   }

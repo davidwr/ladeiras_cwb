@@ -4,11 +4,16 @@ import Map from '../../components/Map/Map'
 import routes from '../../maps/routes.json'
 import { useParams } from 'react-router-dom'
 
+import {
+  getHumanReadableLevel,
+  getHumanReadableCategory
+} from '../../utils/utils'
+
 function Trajeto() {
   const { id } = useParams()
 
   //TODO validate id
-  const { title, level, map_data } = routes[id]
+  const { title, level, map_data, category } = routes[id]
 
   return (
     <div className="Trajeto">
@@ -19,7 +24,8 @@ function Trajeto() {
 
           {/* TODO useContext for taking distance from Map component */}
           {/* {distance && <p>Distância: {distance}</p>} */}
-          <p>Nível: {level}</p>
+          <p>Categoria: {getHumanReadableCategory(category)}</p>
+          <p>Nível: {getHumanReadableLevel(level)}</p>
         </header>
       </Wrapper>
     </div>

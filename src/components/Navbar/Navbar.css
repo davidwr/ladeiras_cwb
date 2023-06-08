@@ -5,6 +5,7 @@
   background-color: #333;
   color: #fff;
   padding: 0.5rem;
+  height: 30px;
 }
 
 .navbar__left,
@@ -21,7 +22,7 @@
 }
 
 .navbar__site-name {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .navbar__logo,

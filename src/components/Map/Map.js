@@ -1,6 +1,6 @@
 import { useRef, useEffect, useState } from 'react'
 
-function Map() {
+function Map(props) {
   const ref = useRef()
   const [distance, setDistance] = useState()
 
@@ -8,29 +8,25 @@ function Map() {
     const directionsService = new window.google.maps.DirectionsService()
     const directionsRenderer = new window.google.maps.DirectionsRenderer()
     const map = new window.google.maps.Map(ref.current, {
-      zoom: 8,
-      center: { lat: -25.385209745136674, lng: -49.30849165007152 }
+      zoom: props.mapData.zoom,
+      center: { lat: props.mapData.center.lat, lng: props.mapData.center.lng }
     })
     directionsRenderer.setMap(map)
 
     const start = new window.google.maps.LatLng(
-      -25.38261005932558,
-      -49.31180395890537
+      props.mapData.start.lat,
+      props.mapData.start.lng
     )
     const end = new window.google.maps.LatLng(
-      -25.387303056261842,
-      -49.30446489412115
+      props.mapData.end.lat,
+      props.mapData.end.lng
     )
-    const stops = [
-      // {location: new window.google.maps.LatLng(37.7749, -122.4194), stopover: true},
-      // {location: new window.google.maps.LatLng(37.4419, -122.1430), stopover: true},
-      // {location: new window.google.maps.LatLng(37.3352, -121.8811), stopover: true}
-    ]
+    const stops = props.mapData.stops
     const request = {
       origin: start,
       destination: end,
       waypoints: stops,
-      travelMode: 'WALKING'
+      travelMode: 'BICYCLING'
     }
     directionsService.route(request, function (result, status) {
       if (status === 'OK') {
@@ -38,14 +34,13 @@ function Map() {
 
         const distance = result.routes[0].legs[0].distance.text
         setDistance(distance)
-        console.log('Distance:', distance)
       }
     })
   })
 
   return (
     <div>
-      <div ref={ref} style={{ height: '400px', width: '600px' }}></div>
+      <div ref={ref} style={{ height: '250px', width: '600px' }}></div>
       {distance && <p>Distância: {distance}</p>}
     </div>
   )
