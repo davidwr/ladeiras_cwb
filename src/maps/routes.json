@@ -10,7 +10,8 @@
       "start": { "lat": -25.38261005932558, "lng": -49.31180395890537 },
       "end": { "lat": -25.387303056261842, "lng": -49.30446489412115 },
       "stops": []
-    }
+    },
+    "details": "Famosa ladeira Fredolin, para avançados no patins que querem sentir bastante adrenalina e velocidade."
   },
   "9621e9733e034dad8e1d49edfdf83974": {
     "title": "São Lourenço",
@@ -23,6 +24,49 @@
       "start": { "lat": -25.420396628595295, "lng": -49.26938864364808 },
       "end": { "lat": -25.388038905461787, "lng": -49.26678695756765 },
       "stops": []
-    }
+    },
+    "details": "Urban iniciante, trajeto tranquilo, da para fazer completo pela ciclovia, pouca subida, existe uma ponte de madeira no meio do trajeto, tomar cuidado. Na volta existem algumas descidas pequenas."
+  },
+  "6282b09732a44b01bd581e6a7998c6eb": {
+    "title": "Boqueirão",
+    "category": "trajeto",
+    "level": "BEGINNER",
+    "rate": "3",
+    "map_data": {
+      "zoom": 7,
+      "center": { "lat": -25.4943807, "lng": -49.2564796 },
+      "start": { "lat": -25.515475255090085, "lng": -49.23055299950859 },
+      "end": { "lat": -25.472819813667705, "lng": -49.25145254466498 },
+      "stops": []
+    },
+    "details": "Trajeto plano tranquilo, para iniciantes no Urban. Para quem quiser também é possível descer o viaduto, uma pequena ladeira."
+  },
+  "9b7bf69fcd234088860bcb2a40b2a406": {
+    "title": "Tobogã",
+    "category": "ladeira",
+    "level": ["BEGINNER", "INTERMEDIATE"],
+    "rate": "3",
+    "map_data": {
+      "zoom": 7,
+      "center": { "lat": -25.3973462, "lng": -49.2599834 },
+      "start": { "lat": -25.394833524004927, "lng": -49.257924900454135 },
+      "end": { "lat": -25.399838524331468, "lng": -49.2592375252565 },
+      "stops": []
+    },
+    "details": "Ladeirinha da hora para sair do iniciante. É a primeira ladeira de muitos patinadores."
+  },
+  "3518aaf52de04fe79eb8-bf0d1de0a79e": {
+    "title": "Manoel Ribas - Portal",
+    "category": "ladeira",
+    "level": ["INTERMEDIATE", "ADVANCED"],
+    "rate": "3",
+    "map_data": {
+      "zoom": 7,
+      "center": { "lat": -25.4149641, "lng": -49.3070033 },
+      "start": { "lat": -25.415446914845315, "lng": -49.30105935935663 },
+      "end": { "lat": -25.414720314067, "lng": -49.30692118238725 },
+      "stops": []
+    },
+    "details": "Ladeira Manoel Ribas do Portal, curva acentuada para direita no final."
   }
 }

@@ -13,7 +13,7 @@ function Trajeto() {
   const { id } = useParams()
 
   //TODO validate id
-  const { title, level, map_data, category } = routes[id]
+  const { title, level, map_data, category, details } = routes[id]
 
   return (
     <div className="Trajeto">
@@ -26,6 +26,7 @@ function Trajeto() {
           {/* {distance && <p>Distância: {distance}</p>} */}
           <p>Categoria: {getHumanReadableCategory(category)}</p>
           <p>Nível: {getHumanReadableLevel(level)}</p>
+          <p>Detalhes: {details}</p>
         </header>
       </Wrapper>
     </div>

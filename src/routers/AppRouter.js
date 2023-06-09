@@ -9,7 +9,9 @@ const router = createBrowserRouter([
     path: '/',
     element: (
       <div style={{ textAlign: 'center' }}>
-        <p style={{ color: '#fff' }}>{'Em construção :)'}</p>
+        <p style={{ color: '#fff' }}>
+          {'Em construção :), consulte os trajetos disponíveis no menu.'}
+        </p>
       </div>
     ),
     errorElement: <ErrorPage />

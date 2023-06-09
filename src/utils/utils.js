@@ -5,6 +5,15 @@ export function getHumanReadableLevel(levelValue) {
     ADVANCED: 'Avançado'
   }
 
+  if (typeof levelValue === 'object') {
+    return levelValue
+      .map(l => {
+        return levels[l]
+      })
+      .join(' para ')
+      .toString()
+  }
+
   return levels[levelValue]
 }
 
