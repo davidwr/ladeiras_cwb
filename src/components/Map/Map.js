@@ -3,6 +3,7 @@ import { useRef, useEffect, useState } from 'react'
 function Map(props) {
   const ref = useRef()
   const [distance, setDistance] = useState()
+  const [elevation, setElevation] = useState(null)
   const directionsRendererRef = useRef()
 
   useEffect(() => {
@@ -36,6 +37,30 @@ function Map(props) {
 
         const distance = result.routes[0].legs[0].distance.text
         setDistance(distance)
+
+        if (props.category === 'ladeira') {
+          const path = result.routes[0].overview_path
+          const elevationService = new window.google.maps.ElevationService()
+          const elevationRequest = {
+            path: path,
+            samples: 2
+          }
+
+          elevationService.getElevationAlongPath(
+            elevationRequest,
+            function (elevationResult, status) {
+              if (status === 'OK') {
+                const elevations = elevationResult.map(
+                  result => result.elevation
+                )
+
+                const averageElevation = elevations.reduce((a, b) => a - b)
+                console.log(averageElevation)
+                setElevation(Math.round(averageElevation))
+              }
+            }
+          )
+        }
       }
     })
   })
@@ -67,6 +92,7 @@ function Map(props) {
     <div>
       <div ref={ref} style={{ height: '250px', width: '600px' }}></div>
       {distance && <p>Distância: {distance}</p>}
+      {elevation && <p>Elevação Média: {elevation} m</p>}
       <button onClick={share}>Abrir no Maps</button>
     </div>
   )

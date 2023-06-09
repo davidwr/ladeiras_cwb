@@ -20,7 +20,7 @@ function Trajeto() {
       <Wrapper apiKey={process.env.REACT_APP_GOOGLE_MAPS_API_KEY}>
         <header className="Trajeto-header">
           <h2>{title}</h2>
-          <Map mapData={map_data} />
+          <Map mapData={map_data} category={category} />
 
           {/* TODO useContext for taking distance from Map component */}
           {/* {distance && <p>Distância: {distance}</p>} */}

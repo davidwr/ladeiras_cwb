@@ -65,6 +65,7 @@ function List() {
     }
   }
 
+  //TODO pagination
   return (
     <div className="listTable">
       <Filter onSearch={onSearch} />

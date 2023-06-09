@@ -68,5 +68,33 @@
       "stops": []
     },
     "details": "Ladeira Manoel Ribas do Portal, curva acentuada para direita no final."
+  },
+  "edc096ff6e524237aa4c81503d9a87b2": {
+    "title": "Nautizoo",
+    "category": "trajeto",
+    "level": ["BEGINNER"],
+    "rate": "3",
+    "map_data": {
+      "zoom": 7,
+      "center": { "lat": -25.545101, "lng": -49.2283525 },
+      "start": { "lat": -25.52555521836183, "lng": -49.22360770072642 },
+      "end": { "lat": -25.559371456375157, "lng": -49.23075595814638 },
+      "stops": []
+    },
+    "details": "Passeio Nautizoo feito pelo grupo Patins em ação todo domingo cedinho. Super tranquilo, para iniciantes. Mas existe uma ladeira radical no final que é opcional."
+  },
+  "5570db7af89546ceb5f6-f2ced0657577": {
+    "title": "Ladeira Nautizoo",
+    "category": "ladeira",
+    "level": ["INTERMEDIATE"],
+    "rate": "3",
+    "map_data": {
+      "zoom": 7,
+      "center": { "lat": -25.545101, "lng": -49.2283525 },
+      "start": { "lat": -25.556493276348927, "lng": -49.23110687048999 },
+      "end": { "lat": -25.559371456375157, "lng": -49.23075595814638 },
+      "stops": []
+    },
+    "details": "Ladeira radical do Nautizoo, ladeira que engana, parece fácil, mas é perigosa."
   }
 }
