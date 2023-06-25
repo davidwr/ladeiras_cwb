@@ -55,7 +55,6 @@ function Map(props) {
                 )
 
                 const averageElevation = elevations.reduce((a, b) => a - b)
-                console.log(averageElevation)
                 setElevation(Math.round(averageElevation))
               }
             }
@@ -67,8 +66,6 @@ function Map(props) {
 
   const share = () => {
     const directions = directionsRendererRef.current.getDirections()
-
-    console.log(directions)
 
     if (directions) {
       const url =
@@ -83,7 +80,6 @@ function Map(props) {
         ) +
         '&travelmode=' +
         encodeURI(directions.request.travelMode)
-      console.log(url)
       window.open(url, '_blank')
     }
   }

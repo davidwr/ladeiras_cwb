@@ -1,8 +1,9 @@
-{
-  "c591949d58a84729b742cde98281fd00": {
+[
+  {
+    "id": "c591949d58a84729b742cde98281fd00",
     "title": "Fredolin",
     "category": "ladeira",
-    "level": "ADVANCED",
+    "levels": "ADVANCED",
     "rate": "4",
     "map_data": {
       "zoom": 8,
@@ -13,10 +14,11 @@
     },
     "details": "Famosa ladeira Fredolin, para avançados no patins que querem sentir bastante adrenalina e velocidade."
   },
-  "9621e9733e034dad8e1d49edfdf83974": {
+  {
+    "id": "9621e9733e034dad8e1d49edfdf83974",
     "title": "São Lourenço",
     "category": "trajeto",
-    "level": "BEGINNER",
+    "levels": "BEGINNER",
     "rate": "3",
     "map_data": {
       "zoom": 7,
@@ -27,10 +29,11 @@
     },
     "details": "Urban iniciante, trajeto tranquilo, da para fazer completo pela ciclovia, pouca subida, existe uma ponte de madeira no meio do trajeto, tomar cuidado. Na volta existem algumas descidas pequenas."
   },
-  "6282b09732a44b01bd581e6a7998c6eb": {
+  {
+    "id": "6282b09732a44b01bd581e6a7998c6eb",
     "title": "Boqueirão",
     "category": "trajeto",
-    "level": "BEGINNER",
+    "levels": "BEGINNER",
     "rate": "3",
     "map_data": {
       "zoom": 7,
@@ -41,10 +44,11 @@
     },
     "details": "Trajeto plano tranquilo, para iniciantes no Urban. Para quem quiser também é possível descer o viaduto, uma pequena ladeira."
   },
-  "9b7bf69fcd234088860bcb2a40b2a406": {
+  {
+    "id": "9b7bf69fcd234088860bcb2a40b2a406",
     "title": "Tobogã",
     "category": "ladeira",
-    "level": ["BEGINNER", "INTERMEDIATE"],
+    "levels": ["BEGINNER", "INTERMEDIATE"],
     "rate": "3",
     "map_data": {
       "zoom": 7,
@@ -55,10 +59,11 @@
     },
     "details": "Ladeirinha da hora para sair do iniciante. É a primeira ladeira de muitos patinadores."
   },
-  "3518aaf52de04fe79eb8-bf0d1de0a79e": {
+  {
+    "id": "3518aaf52de04fe79eb8bf0d1de0a79e",
     "title": "Manoel Ribas - Portal",
     "category": "ladeira",
-    "level": ["INTERMEDIATE", "ADVANCED"],
+    "levels": ["INTERMEDIATE", "ADVANCED"],
     "rate": "3",
     "map_data": {
       "zoom": 7,
@@ -69,10 +74,11 @@
     },
     "details": "Ladeira Manoel Ribas do Portal, curva acentuada para direita no final."
   },
-  "edc096ff6e524237aa4c81503d9a87b2": {
+  {
+    "id": "edc096ff6e524237aa4c81503d9a87b2",
     "title": "Nautizoo",
     "category": "trajeto",
-    "level": ["BEGINNER"],
+    "levels": ["BEGINNER"],
     "rate": "3",
     "map_data": {
       "zoom": 7,
@@ -83,10 +89,11 @@
     },
     "details": "Passeio Nautizoo feito pelo grupo Patins em ação todo domingo cedinho. Super tranquilo, para iniciantes. Mas existe uma ladeira radical no final que é opcional."
   },
-  "5570db7af89546ceb5f6-f2ced0657577": {
+  {
+    "id": "5570db7af89546ceb5f6f2ced065757712",
     "title": "Ladeira Nautizoo",
     "category": "ladeira",
-    "level": ["INTERMEDIATE"],
+    "levels": ["INTERMEDIATE"],
     "rate": "3",
     "map_data": {
       "zoom": 7,
@@ -97,4 +104,4 @@
     },
     "details": "Ladeira radical do Nautizoo, ladeira que engana, parece fácil, mas é perigosa."
   }
-}
+]

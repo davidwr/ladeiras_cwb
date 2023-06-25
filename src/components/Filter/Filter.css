@@ -14,6 +14,7 @@
   background-color: #555;
   color: #fff;
   border-radius: 20px;
+  margin-right: 10px;
 }
 
 .filter-button {
@@ -28,4 +29,13 @@
 
 .filter-button:hover {
   background-color: #999;
+}
+
+.filter-dropdown {
+  padding: 8px;
+  background-color: #555;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  margin-right: 10px;
 }

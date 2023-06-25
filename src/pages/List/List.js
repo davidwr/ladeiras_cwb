@@ -1,98 +1,66 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 
-import { useNavigate } from 'react-router-dom'
 import './List.css'
+
 import routes from '../../maps/routes.json'
 
-import {
-  getHumanReadableCategory,
-  getHumanReadableLevel
-} from '../../utils/utils'
+import Pagination from '../../components/Pagination/Pagination'
 
 import Filter from '../../components/Filter/Filter'
 
 function List() {
-  const navigate = useNavigate()
   const [filteredRoutes, setFilteredRoutes] = useState(routes)
 
-  function goTo(id) {
-    navigate('/trajeto/' + id)
-  }
+  function onSearch(searchTerm, categoryFilter, levelFilter) {
+    let filteredData = filteredRoutes
 
-  // function generateStars(rate) {
-  //   const stars = []
-
-  //   for (let index = 0; index < rate; index++) {
-  //     stars.push(<span key={index} className="fa fa-star checked"></span>)
-  //   }
-
-  //   return <div>{stars}</div>
-  // }
-
-  function onSearch(searchTerm) {
-    if (!searchTerm) {
-      return setFilteredRoutes(routes)
+    if (categoryFilter) {
+      filteredData = filteredData.filter(
+        route => route.category === categoryFilter
+      )
     }
 
-    const filteredData = Object.keys(routes)
-      .map(id => routes[id])
-      .filter(item => {
-        const searchInNestedObjects = obj => {
-          for (let key in obj) {
-            if (obj.hasOwnProperty(key)) {
-              if (typeof obj[key] === 'object') {
-                if (searchInNestedObjects(obj[key])) {
-                }
-              } else if (
-                String(obj[key])
-                  .toLowerCase()
-                  .includes(searchTerm.toLowerCase())
-              ) {
-                return true
+    if (levelFilter) {
+      filteredData = filteredData.filter(route =>
+        route.levels.includes(levelFilter)
+      )
+    }
+
+    if (!searchTerm) {
+      return setFilteredRoutes(filteredData)
+    }
+
+    const filteredTerms = filteredData.filter(item => {
+      const searchInNestedObjects = obj => {
+        for (let key in obj) {
+          if (obj.hasOwnProperty(key)) {
+            if (typeof obj[key] === 'object') {
+              if (searchInNestedObjects(obj[key])) {
               }
+            } else if (
+              String(obj[key]).toLowerCase().includes(searchTerm.toLowerCase())
+            ) {
+              return true
             }
           }
-          return false
         }
+        return false
+      }
 
-        return searchInNestedObjects(item)
-      })
+      return searchInNestedObjects(item)
+    })
 
-    if (filteredData.length) {
-      setFilteredRoutes(filteredData)
+    if (filteredTerms.length) {
+      setFilteredRoutes(filteredTerms)
     } else {
       setFilteredRoutes(routes)
     }
   }
 
-  //TODO pagination
   return (
-    <div className="listTable">
+    <div>
       <Filter onSearch={onSearch} />
-      <table>
-        <thead>
-          <tr>
-            <th>Nome/Apelido</th>
-            <th>Categoria</th>
-            <th>Nível</th>
-            {/* <th>Pontuação</th> */}
-            <th>Opções</th>
-          </tr>
-        </thead>
-        <tbody>
-          {Object.keys(filteredRoutes).map((key, index) => (
-            <tr key={key}>
-              <td>{filteredRoutes[key].title}</td>
-              <td>{getHumanReadableCategory(filteredRoutes[key].category)}</td>
-              <td>{getHumanReadableLevel(filteredRoutes[key].level)}</td>
-              {/* <td>{generateStars(filteredRoutes[key].rate)}</td> */}
-              <td>
-                <button onClick={() => goTo(key)}>Ver mapa</button>
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+      <Pagination items={filteredRoutes} itemsPerPage={10} />
     </div>
   )
 }

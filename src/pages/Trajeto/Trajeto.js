@@ -13,7 +13,9 @@ function Trajeto() {
   const { id } = useParams()
 
   //TODO validate id
-  const { title, level, map_data, category, details } = routes[id]
+  const { title, levels, map_data, category, details } = routes.filter(
+    r => r.id === id
+  )[0]
 
   return (
     <div className="Trajeto">
@@ -25,7 +27,7 @@ function Trajeto() {
           {/* TODO useContext for taking distance from Map component */}
           {/* {distance && <p>Distância: {distance}</p>} */}
           <p>Categoria: {getHumanReadableCategory(category)}</p>
-          <p>Nível: {getHumanReadableLevel(level)}</p>
+          <p>Nível: {getHumanReadableLevel(levels)}</p>
           <p>Detalhes: {details}</p>
         </header>
       </Wrapper>
