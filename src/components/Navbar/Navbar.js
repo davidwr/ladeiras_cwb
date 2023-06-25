@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import './Navbar.css'
 
+// import SignIn from './../SignIn/SignIn'
+
 const Navbar = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false)
 
@@ -21,7 +23,6 @@ const Navbar = () => {
             Menu
           </button>
           <div className="navbar__dropdown-menu">
-            <a href="/">Início</a>
             <a href="/trajetos">Trajetos</a>
           </div>
         </div>
@@ -29,10 +30,7 @@ const Navbar = () => {
       <div className="navbar__center">
         <h1 className="navbar__site-name">Ladeiras CWB</h1>
       </div>
-      <div className="navbar__right">
-        {/* <img src="/path/to/logo.png" alt="Logo" className="navbar__logo" /> */}
-        {/* <button>Logout</button> */}
-      </div>
+      <div className="navbar__right">{/* <SignIn /> */}</div>
     </nav>
   )
 }

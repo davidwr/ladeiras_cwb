@@ -28,7 +28,7 @@ tr:hover {
 
 .detail-button {
   padding: 5px 10px;
-  background-color: #777;
+  background-color: #945929;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -37,8 +37,6 @@ tr:hover {
 .detail-button:hover {
   background-color: #999;
 }
-
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
 .checked {
   color: orange;
@@ -51,4 +49,14 @@ tr:hover {
 
 .page-text {
   color: #fff;
+}
+
+@media (max-width: 768px) {
+  table {
+    font-size: 14px;
+  }
+
+  .listTable {
+    margin: 10px;
+  }
 }

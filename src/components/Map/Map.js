@@ -1,10 +1,13 @@
-import { useRef, useEffect, useState } from 'react'
+import { useRef, useEffect, useContext } from 'react'
+
+import './Map.css'
+import MapContext from '../../context/MapContext'
 
 function Map(props) {
   const ref = useRef()
-  const [distance, setDistance] = useState()
-  const [elevation, setElevation] = useState(null)
   const directionsRendererRef = useRef()
+
+  const { setDistance, setElevation } = useContext(MapContext)
 
   useEffect(() => {
     const directionsService = new window.google.maps.DirectionsService()
@@ -86,10 +89,13 @@ function Map(props) {
 
   return (
     <div>
-      <div ref={ref} style={{ height: '250px', width: '600px' }}></div>
-      {distance && <p>Distância: {distance}</p>}
-      {elevation && <p>Elevação Média: {elevation} m</p>}
-      <button onClick={share}>Abrir no Maps</button>
+      <div ref={ref} className="g-maps"></div>
+      <div style={{ marginTop: '10px' }}>
+        <button className="maps-button" onClick={share}>
+          Abrir no Maps
+          <span className="icon fa fa-map-marker"></span>
+        </button>
+      </div>
     </div>
   )
 }

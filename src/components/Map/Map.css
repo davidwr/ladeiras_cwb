@@ -1,0 +1,26 @@
+.maps-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #555;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.maps-button:hover {
+  background-color: #777;
+}
+
+.maps-button .icon {
+  margin-left: 5px;
+}
+
+.g-maps {
+  height: 250px;
+  width: 80vw;
+}

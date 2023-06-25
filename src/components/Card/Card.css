@@ -1,0 +1,35 @@
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* width: 70%; */
+}
+
+.card {
+  /* width: calc(20% - 15px); */
+  background-color: #945929;
+  color: #fff;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.card:nth-child(5n) {
+  margin-right: 0;
+}
+
+.card:hover {
+  background-color: #555;
+}
+
+.card-title {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 14px;
+  line-height: 1.5;
+}

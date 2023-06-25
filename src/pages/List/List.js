@@ -5,14 +5,14 @@ import './List.css'
 import routes from '../../maps/routes.json'
 
 import Pagination from '../../components/Pagination/Pagination'
-
 import Filter from '../../components/Filter/Filter'
+import BottomBar from '../../components/BottomBar/BottomBar'
 
 function List() {
   const [filteredRoutes, setFilteredRoutes] = useState(routes)
 
   function onSearch(searchTerm, categoryFilter, levelFilter) {
-    let filteredData = filteredRoutes
+    let filteredData = routes
 
     if (categoryFilter) {
       filteredData = filteredData.filter(
@@ -61,6 +61,7 @@ function List() {
     <div>
       <Filter onSearch={onSearch} />
       <Pagination items={filteredRoutes} itemsPerPage={10} />
+      <BottomBar />
     </div>
   )
 }

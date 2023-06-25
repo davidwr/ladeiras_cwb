@@ -7,13 +7,7 @@ import { createBrowserRouter } from 'react-router-dom'
 const router = createBrowserRouter([
   {
     path: '/',
-    element: (
-      <div style={{ textAlign: 'center' }}>
-        <p style={{ color: '#fff' }}>
-          {'Em construção :), consulte os trajetos disponíveis no menu.'}
-        </p>
-      </div>
-    ),
+    element: <List />,
     errorElement: <ErrorPage />
   },
   {
