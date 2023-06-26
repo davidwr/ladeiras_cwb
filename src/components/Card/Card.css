@@ -2,11 +2,9 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  /* width: 70%; */
 }
 
 .card {
-  /* width: calc(20% - 15px); */
   background-color: #945929;
   color: #fff;
   padding: 15px;

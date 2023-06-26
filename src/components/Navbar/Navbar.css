@@ -69,3 +69,9 @@
 .navbar__dropdown-menu a:hover {
   background-color: #555;
 }
+
+.beta-text {
+  margin-left: 5px;
+  color: red;
+  font-size: small;
+}

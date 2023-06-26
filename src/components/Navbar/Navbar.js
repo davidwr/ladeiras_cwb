@@ -28,7 +28,9 @@ const Navbar = () => {
         </div>
       </div>
       <div className="navbar__center">
-        <h1 className="navbar__site-name">Ladeiras CWB</h1>
+        <h1 className="navbar__site-name">
+          Ladeiras CWB<span className="beta-text">BETA</span>
+        </h1>
       </div>
       <div className="navbar__right">{/* <SignIn /> */}</div>
     </nav>
