@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ladeiras_cwb/static/css/main.c2129bce.css",
-    "main.js": "/ladeiras_cwb/static/js/main.40a92325.js",
-    "static/js/787.737be37c.chunk.js": "/ladeiras_cwb/static/js/787.737be37c.chunk.js",
-    "index.html": "/ladeiras_cwb/index.html",
-    "main.c2129bce.css.map": "/ladeiras_cwb/static/css/main.c2129bce.css.map",
-    "main.40a92325.js.map": "/ladeiras_cwb/static/js/main.40a92325.js.map",
-    "787.737be37c.chunk.js.map": "/ladeiras_cwb/static/js/787.737be37c.chunk.js.map"
+    "main.css": "/static/css/main.207d3f29.css",
+    "main.js": "/static/js/main.e86630f1.js",
+    "static/js/787.737be37c.chunk.js": "/static/js/787.737be37c.chunk.js",
+    "index.html": "/index.html",
+    "main.207d3f29.css.map": "/static/css/main.207d3f29.css.map",
+    "main.e86630f1.js.map": "/static/js/main.e86630f1.js.map",
+    "787.737be37c.chunk.js.map": "/static/js/787.737be37c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c2129bce.css",
-    "static/js/main.40a92325.js"
+    "static/css/main.207d3f29.css",
+    "static/js/main.e86630f1.js"
   ]
 }
