@@ -40,8 +40,12 @@ function Map(props) {
       if (status === 'OK') {
         directionsRenderer.setDirections(result)
 
-        const distance = result.routes[0].legs[0].distance.text
-        setDistance(distance)
+        const distanceObject = result.routes[0].legs[0].distance
+        if (distanceObject.value < 1000) {
+          setDistance(distanceObject.value)
+        } else {
+          setDistance(distanceObject.text)
+        }
 
         if (props.category === 'ladeira') {
           const path = result.routes[0].overview_path

@@ -25,3 +25,11 @@ export function getHumanReadableCategory(categoryValue) {
 
   return categories[categoryValue]
 }
+
+export function getHumanReadableDistance(distanceValue) {
+  if (typeof distanceValue === 'string') {
+    return distanceValue
+  }
+
+  return `${distanceValue}m`
+}

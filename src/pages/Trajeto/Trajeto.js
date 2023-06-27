@@ -11,7 +11,8 @@ import Card from '../../components/Card/Card'
 
 import {
   getHumanReadableLevel,
-  getHumanReadableCategory
+  getHumanReadableCategory,
+  getHumanReadableDistance
 } from '../../utils/utils'
 
 function Trajeto() {
@@ -47,9 +48,14 @@ function Trajeto() {
               title={title}
             />
             <div className="card-container">
-              {distance && <Card cardTitle="Distância:" cardValue={distance} />}
+              {distance && (
+                <Card
+                  cardTitle="Distância:"
+                  cardValue={getHumanReadableDistance(distance)}
+                />
+              )}
               {elevation && (
-                <Card cardTitle="Elevação Média:" cardValue={`${elevation}m`} />
+                <Card cardTitle="Elevação:" cardValue={`${elevation}m`} />
               )}
               <Card
                 cardTitle="Categoria:"
