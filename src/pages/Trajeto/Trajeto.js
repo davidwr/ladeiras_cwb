@@ -44,6 +44,7 @@ function Trajeto() {
               mapData={map_data}
               category={category}
               level={getHumanReadableLevel(levels)}
+              title={title}
             />
             <div className="card-container">
               {distance && <Card cardTitle="Distância:" cardValue={distance} />}

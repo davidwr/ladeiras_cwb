@@ -3,6 +3,8 @@ import { useRef, useEffect, useContext } from 'react'
 import './Map.css'
 import MapContext from '../../context/MapContext'
 
+import ShareButton from '../../components/ShareButton/ShareButton'
+
 function Map(props) {
   const ref = useRef()
   const directionsRendererRef = useRef()
@@ -90,7 +92,8 @@ function Map(props) {
   return (
     <div>
       <div ref={ref} className="g-maps"></div>
-      <div style={{ marginTop: '10px' }}>
+      <div className="maps-options" style={{ marginTop: '10px' }}>
+        <ShareButton title={`Ladeiras CWB`} text={props.title} />
         <button className="maps-button" onClick={share}>
           Abrir no Maps
           <span className="icon fa fa-map-marker"></span>

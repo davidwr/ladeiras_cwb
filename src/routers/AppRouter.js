@@ -2,9 +2,9 @@ import Trajeto from '../pages/Trajeto/Trajeto'
 import List from '../pages/List/List'
 import ErrorPage from '../error-page'
 
-import { createBrowserRouter } from 'react-router-dom'
+import { createHashRouter } from 'react-router-dom'
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/',
     element: <List />,
@@ -13,10 +13,6 @@ const router = createBrowserRouter([
   {
     path: '/trajeto/:id',
     element: <Trajeto />
-  },
-  {
-    path: '/trajetos',
-    element: <List />
   }
 ])
 

@@ -1,4 +1,4 @@
-.maps-button {
+.share-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -13,21 +13,10 @@
   margin: 10px;
 }
 
-.maps-button:hover {
+.share-button:hover {
   background-color: #777;
 }
 
-.maps-button .icon {
+.share-button .icon {
   margin-left: 5px;
-}
-
-.g-maps {
-  height: 250px;
-  width: 80vw;
-}
-
-.maps-options {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
 }
