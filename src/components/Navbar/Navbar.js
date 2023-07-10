@@ -27,7 +27,7 @@ const Navbar = () => {
           Ladeiras CWB<span className="beta-text">BETA</span>
         </h1>
       </div>
-      <div className="navbar__right">{/* <SignIn /> */}</div>
+      <div className="navbar__right"></div>
     </nav>
   )
 }

@@ -1,0 +1,15 @@
+.terms {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #fff;
+}
+
+.terms p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.terms a {
+  color: rgb(77, 205, 211);
+}
