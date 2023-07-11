@@ -64,7 +64,7 @@
     "id": "3518aaf52de04fe79eb8bf0d1de0a79e",
     "title": "Manoel Ribas - Portal",
     "category": "ladeira",
-    "levels": ["INTERMEDIATE", "ADVANCED"],
+    "levels": ["ADVANCED"],
     "rate": "3",
     "map_data": {
       "zoom": 7,
@@ -349,5 +349,35 @@
       "stops": []
     },
     "details": "Essa ladeira é uma alternativa ao tobogã."
+  },
+  {
+    "id": "1c31304d4bfa4bf38ee126e8ed616364",
+    "title": "Pista do Guabirotuba",
+    "category": "ladeira",
+    "levels": ["INTERMEDIATE"],
+    "rate": "3",
+    "map_data": {
+      "zoom": 7,
+      "center": { "lat": -25.545101, "lng": -49.2283525 },
+      "start": { "lat": -25.45655973555435, "lng": -49.24692592327159 },
+      "end": { "lat": -25.457830706040447, "lng": -49.246570240993016 },
+      "stops": []
+    },
+    "details": "Pista de rolimã do Guabirotuba."
+  },
+  {
+    "id": "03cc03cc0cbe45de920fd589a13d45f9",
+    "title": "Shopping Jockey",
+    "category": "ladeira",
+    "levels": ["INTERMEDIATE"],
+    "rate": "3",
+    "map_data": {
+      "zoom": 7,
+      "center": { "lat": -25.545101, "lng": -49.2283525 },
+      "start": { "lat": -25.425250778689993, "lng": -49.20651059192748 },
+      "end": { "lat": -25.426336883077425, "lng": -49.20946713167581 },
+      "stops": []
+    },
+    "details": "Ladeira do Shopping Jockey. Possuí algumas lombadas e tartarugas entre as faixas."
   }
 ]
