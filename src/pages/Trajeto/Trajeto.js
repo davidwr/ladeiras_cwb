@@ -31,9 +31,8 @@ function Trajeto() {
   }
 
   //TODO validate id
-  const { title, levels, map_data, category, details } = routes.filter(
-    r => r.id === id
-  )[0]
+  const { title, levels, map_data, category, details, shareUrl } =
+    routes.filter(r => r.id === id)[0]
 
   return (
     <div className="Trajeto">
@@ -46,6 +45,7 @@ function Trajeto() {
               category={category}
               level={getHumanReadableLevel(levels)}
               title={title}
+              shareUrl={shareUrl}
             />
             <div className="card-container">
               {distance && (

@@ -5,6 +5,9 @@ import MapContext from '../../context/MapContext'
 
 import ShareButton from '../../components/ShareButton/ShareButton'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMapMarker } from '@fortawesome/free-solid-svg-icons'
+
 function Map(props) {
   const ref = useRef()
   const directionsRendererRef = useRef()
@@ -74,21 +77,35 @@ function Map(props) {
   })
 
   const share = () => {
+    if (props.shareUrl) {
+      return window.open(props.shareUrl, '_blank')
+    }
+
     const directions = directionsRendererRef.current.getDirections()
 
     if (directions) {
-      const url =
-        'https://www.google.com/maps/dir/?api=1' +
-        '&origin=' +
-        encodeURI(
-          `${directions.request.origin.location.lat()},${directions.request.origin.location.lng()}`
-        ) +
-        '&destination=' +
-        encodeURI(
-          `${directions.request.destination.location.lat()},${directions.request.destination.location.lng()}`
-        ) +
-        '&travelmode=' +
-        encodeURI(directions.request.travelMode)
+      const origin = directions.request.origin.location
+      const destination = directions.request.destination.location
+      const waypoints = directions.request.waypoints
+
+      let url = 'https://www.google.com/maps/dir/?api=1'
+      url += '&origin=' + encodeURI(`${origin.lat()},${origin.lng()}`)
+      url +=
+        '&destination=' + encodeURI(`${destination.lat()},${destination.lng()}`)
+
+      if (waypoints && waypoints.length > 0) {
+        url +=
+          '&waypoints=' +
+          waypoints
+            .map(waypoint =>
+              encodeURI(
+                `${waypoint.location.location.lat()},${waypoint.location.location.lng()}`
+              )
+            )
+            .join('|')
+      }
+
+      url += '&travelmode=' + encodeURI(directions.request.travelMode)
       window.open(url, '_blank')
     }
   }
@@ -100,7 +117,7 @@ function Map(props) {
         <ShareButton title={`Ladeiras CWB`} text={props.title} />
         <button className="maps-button" onClick={share}>
           Abrir no Maps
-          <span className="icon fa fa-map-marker"></span>
+          <FontAwesomeIcon className="icon" icon={faMapMarker} />
         </button>
       </div>
     </div>

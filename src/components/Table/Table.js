@@ -1,6 +1,9 @@
 import { useNavigate } from 'react-router-dom'
 import './Table.css'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSkull } from '@fortawesome/free-solid-svg-icons'
+
 import {
   getHumanReadableCategory,
   getHumanReadableLevel
@@ -23,6 +26,8 @@ function Table({ currentRoutes }) {
   //   return <div>{stars}</div>
   // }
 
+  const skullElement = <FontAwesomeIcon icon={faSkull} />
+
   return (
     <div className="listTable">
       <table>
@@ -38,7 +43,9 @@ function Table({ currentRoutes }) {
         <tbody>
           {currentRoutes.map((route, index) => (
             <tr key={route.id}>
-              <td>{route.title}</td>
+              <td>
+                {route.skull ? skullElement : ''} {route.title}
+              </td>
               <td>{getHumanReadableCategory(route.category)}</td>
               <td>{getHumanReadableLevel(route.levels)}</td>
               {/* <td>{generateStars(route.rate)}</td> */}

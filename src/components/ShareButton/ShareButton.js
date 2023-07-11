@@ -2,6 +2,9 @@ import React from 'react'
 
 import './ShareButton.css'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faShare } from '@fortawesome/free-solid-svg-icons'
+
 const ShareButton = ({ title, text }) => {
   const handleShare = async () => {
     try {
@@ -22,7 +25,7 @@ const ShareButton = ({ title, text }) => {
   return (
     <button className="share-button" onClick={handleShare}>
       Compartilhar
-      <span className="icon fa fa-share"></span>
+      <FontAwesomeIcon className="icon" icon={faShare} />
     </button>
   )
 }

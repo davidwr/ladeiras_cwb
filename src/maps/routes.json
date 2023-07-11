@@ -12,6 +12,7 @@
       "end": { "lat": -25.387303056261842, "lng": -49.30446489412115 },
       "stops": []
     },
+    "skull": true,
     "details": "Famosa ladeira Fredolin, para avançados no patins que querem sentir bastante adrenalina e velocidade."
   },
   {
@@ -103,5 +104,250 @@
       "stops": []
     },
     "details": "Ladeira radical do Nautizoo, ladeira que engana, parece fácil, mas é perigosa."
+  },
+  {
+    "id": "0f2c66177e8649cebe60ce657d665e53",
+    "title": "São Braz",
+    "category": "trajeto",
+    "levels": ["ADVANCED"],
+    "rate": "3",
+    "map_data": {
+      "zoom": 7,
+      "center": { "lat": -25.545101, "lng": -49.2283525 },
+      "start": { "lat": -25.43853813016108, "lng": -49.26833532539496 },
+      "end": { "lat": -25.44488054730096, "lng": -49.30468952388865 },
+      "stops": [
+        {
+          "location": {
+            "lat": -25.440087448413088,
+            "lng": -49.277232472296284
+          },
+          "stopover": false
+        },
+        {
+          "location": { "lat": -25.424324226284273, "lng": -49.28662313316259 },
+          "stopover": false
+        },
+        {
+          "location": { "lat": -25.414436233943604, "lng": -49.30587012827132 },
+          "stopover": false
+        },
+        {
+          "location": { "lat": -25.408825942604217, "lng": -49.32233938819483 },
+          "stopover": false
+        },
+        {
+          "location": { "lat": -25.40054006926446, "lng": -49.331178837210246 },
+          "stopover": false
+        },
+        {
+          "location": { "lat": -25.407821816661045, "lng": -49.33919034472953 },
+          "stopover": false
+        },
+        {
+          "location": { "lat": -25.44119447981863, "lng": -49.34541484461362 },
+          "stopover": false
+        },
+        {
+          "location": { "lat": -25.4375985525686, "lng": -49.32269078905649 },
+          "stopover": false
+        },
+        {
+          "location": { "lat": -25.438916304517434, "lng": -49.32208994384219 },
+          "stopover": false
+        },
+        {
+          "location": { "lat": -25.438722463886382, "lng": -49.31080332060788 },
+          "stopover": false
+        },
+        {
+          "location": { "lat": -25.444961496499094, "lng": -49.30453699121184 },
+          "stopover": false
+        }
+      ]
+    },
+    "details": "Trajeto com ladeiras avançadas e perigosas, Manoel Ribas, Canaleta Mossungue, Monsenhor, KF, etc. Também contém subidas, requer um bom ritmo de patinação.",
+    "shareUrl": "https://www.google.com/maps/dir/-25.4385381,-49.2683353/-25.4400874,-49.2772325/-25.4243242,-49.2866231/-25.4144362,-49.3058701/-25.4088259,-49.3223394/-25.4005401,-49.3311788/-25.4078218,-49.3391903/-25.4411945,-49.3454148/-25.4375986,-49.3226908/-25.4389163,-49.3220899/-25.4448805,-49.3046895/@-25.4223452,-49.3521344,13z/data=!3m1!4b1!4m2!4m1!3e1?entry=ttu"
+  },
+  {
+    "id": "4c3e8db1cbc24171982b06e7ecc645ad",
+    "title": "Canaleta Mossunguê",
+    "category": "ladeira",
+    "levels": ["INTERMEDIATE", "ADVANCED"],
+    "rate": "3",
+    "map_data": {
+      "zoom": 7,
+      "center": { "lat": -25.545101, "lng": -49.2283525 },
+      "start": { "lat": -25.44139510083823, "lng": -49.3451063376547 },
+      "end": { "lat": -25.43769562726466, "lng": -49.32365199757283 },
+      "stops": []
+    },
+    "details": "Canaleta do mossunguê, descidona da hora. Fique atento nos busão."
+  },
+  {
+    "id": "889a04cc3d73447da1f4c8782d0352da",
+    "title": "Monsenhor antes da KF",
+    "category": "ladeira",
+    "levels": ["ADVANCED"],
+    "rate": "3",
+    "map_data": {
+      "zoom": 7,
+      "center": { "lat": -25.545101, "lng": -49.2283525 },
+      "start": { "lat": -25.43889606826056, "lng": -49.32208387981431 },
+      "end": { "lat": -25.44006769172882, "lng": -49.31617702427043 },
+      "stops": []
+    },
+    "details": "Essa ladeira precede a KF, é um pouco assustadora por causa da curva."
+  },
+  {
+    "id": "659dab4ae32842d886edc44011610092",
+    "title": "KF",
+    "category": "ladeira",
+    "levels": ["INTERMEDIATE", "ADVANCED"],
+    "rate": "3",
+    "map_data": {
+      "zoom": 7,
+      "center": { "lat": -25.545101, "lng": -49.2283525 },
+      "start": { "lat": -25.440958923220116, "lng": -49.30856481588161 },
+      "end": { "lat": -25.443370367315264, "lng": -49.306345576630875 },
+      "stops": []
+    },
+    "details": "KF, fique atento ao semáforo e ao transito, o semáforo só fecha se algum pedestre apertar o botão."
+  },
+  {
+    "id": "c9ae2aa6857746d19f04bb8204f1182e",
+    "title": "Francisco Rocha",
+    "category": "ladeira",
+    "levels": ["BEGINNER", "INTERMEDIATE"],
+    "rate": "3",
+    "map_data": {
+      "zoom": 7,
+      "center": { "lat": -25.545101, "lng": -49.2283525 },
+      "start": { "lat": -25.438944933848376, "lng": -49.29122077941942 },
+      "end": { "lat": -25.44240909257422, "lng": -49.289262096270285 },
+      "stops": []
+    },
+    "details": "Ladeira depois da Praça da Espanha."
+  },
+  {
+    "id": "4de52a70da2d4b09b84626fcd974d434",
+    "title": "MON",
+    "category": "ladeira",
+    "levels": ["BEGINNER", "INTERMEDIATE"],
+    "rate": "3",
+    "map_data": {
+      "zoom": 7,
+      "center": { "lat": -25.545101, "lng": -49.2283525 },
+      "start": { "lat": -25.40129595427228, "lng": -49.26402361879244 },
+      "end": { "lat": -25.408937926779963, "lng": -49.26623354260987 },
+      "stops": []
+    },
+    "details": "Ladeira do museu do olho. Bem no começo dela, na primeira curva para esquerda, você deve manter na mão da esquerda (contra mão) ou meio, porque na faixa da direita terão tartarugas. Também possuí algumas lombadas durante o percurso."
+  },
+  {
+    "id": "abcecfa481e74373acdba5b6b4237b1d",
+    "title": "Ladeira dos 90",
+    "category": "ladeira",
+    "levels": ["ADVANCED"],
+    "rate": "3",
+    "map_data": {
+      "zoom": 7,
+      "center": { "lat": -25.545101, "lng": -49.2283525 },
+      "start": { "lat": -25.420515418464547, "lng": -49.29798298862669 },
+      "end": { "lat": -25.42264064449641, "lng": -49.303770559223345 },
+      "stops": []
+    },
+    "skull": true,
+    "details": "Ladeira muito perigosa, não vá sozinho. Precisa de pessoas segurando os carros. Avançada++"
+  },
+  {
+    "id": "635605d7a95440418b5a62ffe180132f",
+    "title": "Paraná",
+    "category": "ladeira",
+    "levels": ["INTERMEDIATE"],
+    "rate": "3",
+    "map_data": {
+      "zoom": 7,
+      "center": { "lat": -25.545101, "lng": -49.2283525 },
+      "start": { "lat": -25.409911827626217, "lng": -49.25592782983345 },
+      "end": { "lat": -25.413115269368465, "lng": -49.25882788396654 },
+      "stops": []
+    },
+    "details": "Ladeira da Paraná, geralmente é depois de descer o tobogã."
+  },
+  {
+    "id": "b75d5ec7c61045cdba373fd2432aedd4",
+    "title": "Viaduto Visconde",
+    "category": "ladeira",
+    "levels": ["INTERMEDIATE"],
+    "rate": "3",
+    "map_data": {
+      "zoom": 7,
+      "center": { "lat": -25.545101, "lng": -49.2283525 },
+      "start": { "lat": -25.431982186445794, "lng": -49.25668772001178 },
+      "end": { "lat": -25.43366737478188, "lng": -49.2609238773123 },
+      "stops": []
+    },
+    "details": "Como qualquer outra ladeira com semáforo, você deve ficar atento e cronometrar o tempo correto antes de descer."
+  },
+  {
+    "id": "59a7ef7cdd8e4dad97ddd065eba057b9",
+    "title": "Wenceslau",
+    "category": "ladeira",
+    "levels": ["BEGINNER", "INTERMEDIATE"],
+    "rate": "3",
+    "map_data": {
+      "zoom": 7,
+      "center": { "lat": -25.545101, "lng": -49.2283525 },
+      "start": { "lat": -25.477905781130662, "lng": -49.28556678844806 },
+      "end": { "lat": -25.47219341966007, "lng": -49.262257893543456 },
+      "stops": []
+    },
+    "details": "Se você pegar a República Argentina e for até o Palladium você sai nela. Tem algumas lombadas durante o trajeto."
+  },
+  {
+    "id": "84134e81a7ec4f69a1fedb86caa8f693",
+    "title": "Praça do Japão",
+    "category": "ladeira",
+    "levels": ["BEGINNER", "INTERMEDIATE"],
+    "rate": "3",
+    "map_data": {
+      "zoom": 7,
+      "center": { "lat": -25.545101, "lng": -49.2283525 },
+      "start": { "lat": -25.44629377453853, "lng": -49.28722394650219 },
+      "end": { "lat": -25.448640486365235, "lng": -49.28795849638797 },
+      "stops": []
+    },
+    "details": "Ladeira da Praça do Japão sentido República Argentina"
+  },
+  {
+    "id": "5247a4dff89a4bfd9a21779d2d98f8d9",
+    "title": "Pista de Rolimã São Lourenço",
+    "category": "ladeira",
+    "levels": ["BEGINNER", "INTERMEDIATE"],
+    "rate": "3",
+    "map_data": {
+      "zoom": 7,
+      "center": { "lat": -25.545101, "lng": -49.2283525 },
+      "start": { "lat": -25.383470372783016, "lng": -49.26487678799856 },
+      "end": { "lat": -25.38409345836362, "lng": -49.265616921729524 },
+      "stops": []
+    },
+    "details": "Pista que fica dentro do Parque São Lourenço. Ótima para treinar o freio em ladeiras. Se descer de lá de cima é Intermediário, se descer da metade é iniciante."
+  },
+  {
+    "id": "3bdaea5354ae4bc19a0ea72b6d0c23d4",
+    "title": "Estados Unidos",
+    "category": "ladeira",
+    "levels": ["INTERMEDIATE"],
+    "rate": "3",
+    "map_data": {
+      "zoom": 7,
+      "center": { "lat": -25.545101, "lng": -49.2283525 },
+      "start": { "lat": -25.392151513880055, "lng": -49.25778699133744 },
+      "end": { "lat": -25.394335062325084, "lng": -49.25486134752398 },
+      "stops": []
+    },
+    "details": "Essa ladeira é uma alternativa ao tobogã."
   }
 ]

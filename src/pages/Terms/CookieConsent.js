@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useLayoutEffect } from 'react'
 import './CookieConsent.css'
 
 const CookieConsent = () => {
   const [showModal, setShowModal] = useState(true)
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const cookieConsentAccepted = document.cookie
       .split('; ')
       .find(row => row.startsWith('cookieConsentAccepted='))
@@ -12,18 +12,20 @@ const CookieConsent = () => {
     setShowModal(!cookieConsentAccepted)
   }, [])
 
-  const handleAccept = () => {
-    setShowModal(false)
+  const createCookieConsent = isAccepted => {
     const CookieDate = new Date()
     CookieDate.setFullYear(CookieDate.getFullYear() + 1)
-    document.cookie =
-      'cookieConsentAccepted=true; expires=' +
-      CookieDate.toUTCString() +
-      '; path=/'
+    document.cookie = `cookieConsentAccepted=${isAccepted}; expires=${CookieDate.toUTCString()}; path=/`
+  }
+
+  const handleAccept = () => {
+    setShowModal(false)
+    createCookieConsent(true)
   }
 
   const handleClose = () => {
     setShowModal(false)
+    createCookieConsent(false)
   }
 
   if (!showModal) {
@@ -51,6 +53,9 @@ const CookieConsent = () => {
           </a>
           .
         </p>
+        <button className="accept-button" onClick={handleClose}>
+          Rejeitar
+        </button>
         <button className="accept-button" onClick={handleAccept}>
           Eu aceito o uso de Cookies
         </button>
