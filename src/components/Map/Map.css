@@ -31,3 +31,9 @@
   flex-direction: row;
   justify-content: center;
 }
+
+@media (max-width: 768px) {
+  .g-maps {
+    height: 70vw;
+  }
+}
