@@ -379,5 +379,20 @@
       "stops": []
     },
     "details": "Ladeira do Shopping Jockey. Possuí algumas lombadas e tartarugas entre as faixas."
+  },
+  {
+    "id": "a1ded5d155fd4452acb5e80ddd9a1ff1",
+    "title": "Dr Muricy",
+    "category": "ladeira",
+    "levels": ["INTERMEDIATE"],
+    "rate": "3",
+    "map_data": {
+      "zoom": 7,
+      "center": { "lat": -25.545101, "lng": -49.2283525 },
+      "start": { "lat": -25.427828203284257, "lng": -49.27441578290382 },
+      "end": { "lat": -25.432309651762345, "lng": -49.27230025367406 },
+      "stops": []
+    },
+    "details": "Ladeira movimentada, cuidado com os bueiros do lado esquerdo das faixas."
   }
 ]
