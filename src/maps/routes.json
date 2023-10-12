@@ -369,7 +369,7 @@
     "id": "03cc03cc0cbe45de920fd589a13d45f9",
     "title": "Shopping Jockey",
     "category": "ladeira",
-    "levels": ["INTERMEDIATE"],
+    "levels": ["ADVANCED"],
     "rate": "3",
     "map_data": {
       "zoom": 7,
@@ -378,7 +378,8 @@
       "end": { "lat": -25.426336883077425, "lng": -49.20946713167581 },
       "stops": []
     },
-    "details": "Ladeira do Shopping Jockey. Possuí algumas lombadas e tartarugas entre as faixas."
+    "skull": true,
+    "details": "Ladeira do Shopping Jockey. CUIDADO buraco e rachaduras do lado direito, na imenda da ponte. Possuí algumas lombadas e tartarugas entre as faixas."
   },
   {
     "id": "a1ded5d155fd4452acb5e80ddd9a1ff1",
