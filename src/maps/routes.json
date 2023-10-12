@@ -203,7 +203,7 @@
     "id": "659dab4ae32842d886edc44011610092",
     "title": "KF",
     "category": "ladeira",
-    "levels": ["INTERMEDIATE", "ADVANCED"],
+    "levels": ["ADVANCED"],
     "rate": "3",
     "map_data": {
       "zoom": 7,
@@ -218,7 +218,7 @@
     "id": "c9ae2aa6857746d19f04bb8204f1182e",
     "title": "Francisco Rocha",
     "category": "ladeira",
-    "levels": ["BEGINNER", "INTERMEDIATE"],
+    "levels": ["INTERMEDIATE"],
     "rate": "3",
     "map_data": {
       "zoom": 7,
